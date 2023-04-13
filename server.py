@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, jsonify, Response
 import service
+from service import Service
 import json
+service = Service()
 
 app = Flask(__name__, template_folder="./templates")
 
